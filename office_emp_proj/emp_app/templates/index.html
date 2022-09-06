@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <title>Office Employee Management System</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- CSS CUSTOM -->
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">   
+
+    <title>Office Employee Management System</title>
+  </head>
+  <body>
+       <!-- header section starts -->
+       <header>
+        <div class="user">
+
+            <h3 class="name"> EMS Portal</h3>
+
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="/all_emp" >View </a></li>
+                <li><a href="/add_emp" >Add </a></li>
+                <li><a href="/remove_emp">Remove</a></li>
+                <li><a href="/filter_emp" >Search</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <!-- header section ends -->
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <h1>  Welcome to the EMS Portal!!</h1>
+    <div class="container">
+      {% load static%}
+      <img src="{% static 'images/em1.jpg' %}" alt="My image" style="width:100%">
+      </div>
+    {% comment %} <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        {% load static %}
+        <img src="{% static 'images/em1.jpg' %}" alt="My image" height="300px" width="700px"/>
+        {% comment %} {% load static%} {% endcomment %}
+        {% comment %} <img src="{% static 'images/rem1.jpg' %}" alt="My image" style="width:100%"> {% endcomment %}
+        {% comment %} <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        {% comment %} {% load static%} {% endcomment %}
+        {% comment %} {% load static %}
+        <img src="{% static 'images/em2.jpg' %}" alt="My image" height="300px" width="700px"/>
+        <div class="text">Caption Two</div>
+      </div>
+      
+      
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br> {% endcomment %}
+      
+      {% comment %} <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+         {% endcomment %}
+      {% comment %} </div>  {% endcomment %}
+      
+    
+    {% comment %} <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="{% static 'images/em2.jpg' %}" alt="My image" style="width:100%">
+        <div class="text">@EMS_Portal</div>
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="{% static 'images/em1.jpg' %}" alt="My image" style="width:50%">
+        <div class="text">@EMS_Portal</div>
+      </div>
+  
+  
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+ 
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+  </div> {% endcomment %}
+
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>About</span> EMS_Portal </h1>
+    
+    <div class="row">
+    
+        <div class="info">
+           <h3 style="text-align: center"><span>WELCOME!!</span></h3>
+                <br>
+              <h3>
+                
+                An employee management system is intended to organize HR and other departments' work processes. It usually includes such features as comprehensive employee databases, work time tracking, custom access levels, and reporting.<br>
+
+                The main benefit of this system is that it helps reduce the workload on HR departments and focus on other essential work. Automating recurring and administrative tasks spares much time that can be invested in growing your business.<br>
+                
+                The amount of time spent on accomplishing tasks might significantly differ among employees. So using an employee management system solution allows you to gain clarity on how to better organize their work processes.<br>
+                Having an efficient employee management system at your disposal allows you to keep employee and customer databases and project data in a single source. A reliable program should also provide data security.
+                <hr>
+
+                When you are working with lots of files, there is a chance that some documents will get lost. Using an effective employee management system lets you keep track of all your files in a centralized location. It significantly reduces the risk of data loss.
+                
+
+           </h3>
+        </div>
+
+    
+<!-- about section ends -->
+{% load static %}
+<script src="{% static '/js/script.js' %}" type="text/javascript"></script>
+ 
+
+</body>
+</html>
